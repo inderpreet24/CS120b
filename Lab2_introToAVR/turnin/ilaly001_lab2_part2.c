@@ -19,7 +19,7 @@ DDRA=0x00;PORTA = 0xFF;
     unsigned char cntavail = 0;
     while (1) {
 	tmpA = PINA;
-	if (tmpA == 0x00) {
+	if (tmpA == 0x00 || tmpA = 0x80) {
  		//4 Spots
                 cntavail = 0x04;
 		PORTC = cntavail;
@@ -41,7 +41,7 @@ DDRA=0x00;PORTA = 0xFF;
         }
 	else {
                   //No Parking
- 		cntavail = 0x0F;
+ 		cntavail = 0x00;
 		PORTC = cntavail;
 	}
     }
