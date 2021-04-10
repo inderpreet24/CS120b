@@ -13,11 +13,32 @@
 #endif
 
 int main(void) {
-    /* Insert DDR and PORT initializations */
+    
+    DDRA = 0x00; PORTA = 0xFF;
+    DDRB = 0xFF; PORTB = 0x00;
+     unsigned char tmpA = 0;
+    unsigned char cntaval = 0;
 
-    /* Insert your solution below */
     while (1) {
-
-    }
+	tmpA = PINA;
+	if (tmpA == 0x01) {
+	        cntaval +=1;
+                     PORTC = cntaval;
+	}
+	if (tmpA == 0x02) {
+                  
+                       cntaval +=1;
+		PORTC = cntaval;	
+	}
+	if ( tmpA == 0x04) {
+                    
+                     cntaval +=1;
+                    PORTC = cntaval;	
+        }
+	if(tmpA == 0x08){
+           cntaval +=1;
+           PORTC = cntaval;
+	    }
     return 1;
 }
+

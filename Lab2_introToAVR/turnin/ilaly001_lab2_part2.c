@@ -38,7 +38,9 @@ int main(void) {
 	if(tmpA == 0x08){
            cntaval +=1;
            PORTC = cntaval;
-	    }
+	 
+   }
+}
     return 1;
 }
 
