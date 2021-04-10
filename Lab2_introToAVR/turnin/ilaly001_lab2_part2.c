@@ -41,7 +41,7 @@ DDRA=0x00;PORTA = 0xFF;
         }
 	else {
                   //No Parking
- 		cntavail = 0x04;
+ 		cntavail = 0x0F;
 		PORTC = cntavail;
 	}
     }
