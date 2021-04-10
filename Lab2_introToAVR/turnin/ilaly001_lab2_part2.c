@@ -19,7 +19,7 @@ DDRA=0x00;PORTA = 0xFF;
     unsigned char cntavail = 0;
     while (1) {
 	tmpA = PINA;
-	if (tmpA == 0x00 || tmpA = 0x80) {
+	if (tmpA == 0x00 || tmpA == 0x80) {
  		//4 Spots
                 cntavail = 0x04;
 		PORTC = cntavail;
