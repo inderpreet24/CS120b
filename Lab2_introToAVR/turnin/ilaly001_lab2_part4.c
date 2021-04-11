@@ -15,7 +15,7 @@
 int main(void) {
     
     DDRA = 0x00; PORTA = 0xFF;
-    DDRB = 0xFF; PORTB = 0xFF;
+    DDRB = 0x00; PORTB = 0xFF;
     DDRC = 0x00; PORTC = 0xFF;
     DDRD = 0xFF; PORTD =0x00;
      unsigned char tmpA = 0;
@@ -32,13 +32,13 @@ int main(void) {
 
 	if (tmpA - tmpC > 80 || tmpC - tmpA > 80) {
 	        tmpD = tmpD | 0x02;
- 	
+ 	PORTD = tmpD;
 	}
 	if (tmpA + tmpB + tmpC > 140) {
                  tmpD = tmpD | 0x01;
-	
+	PORTD = tmpD;
 	}
-            PORTD = tmpD;  
+             
 	    }
     return 1;
 }
