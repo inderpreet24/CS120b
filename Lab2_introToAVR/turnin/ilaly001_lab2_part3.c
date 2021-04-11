@@ -34,7 +34,7 @@ int main(void) {
                     PORTC = cntaval;	
         }
         else if(tmpA == 0x07 || tmpA == 0x0B || tmpA == 0x0D || tmpA == 0x0E) {
-                 cntvail = 0x01;
+                 cntaval = 0x01;
     		PORTC = cntaval;
         }
 	else {
