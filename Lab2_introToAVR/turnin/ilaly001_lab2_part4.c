@@ -28,7 +28,7 @@ int main(void) {
         tmpB = PINB;
         tmpC = PINC;
         tmpD = (tmpA + tmpB + tmpC) >>2;
- 	tmpD = tempD & 0xFC;
+ 	tmpD = tmpD & 0xFC;
 
 	if (tmpA - tmpC > 80 || tmpC - tmpA > 80) {
 	        tmpD = tmpD | 0x02;
