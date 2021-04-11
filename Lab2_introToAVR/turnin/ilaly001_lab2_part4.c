@@ -17,7 +17,7 @@ int main(void) {
     DDRA = 0x00; PORTA = 0xFF;
     DDRB = 0xFF; PORTB = 0xFF;
     DDRC = 0x00; PORTC = 0xFF;
-    DDRD = 0xFF; PORTC =0x00;
+    DDRD = 0xFF; PORTD =0x00;
      unsigned char tmpA = 0;
     unsigned char tmpB = 0;
    unsigned char tmpC = 0;
@@ -36,8 +36,9 @@ int main(void) {
 	}
 	if (tmpA + tmpB + tmpC > 140) {
                  tmpD = tmpD | 0x01;
-		PORTD= tmpD;	
+		PORTD = tmpD;	
 	}
+              
 	    }
     return 1;
 }
