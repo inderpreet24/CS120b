@@ -35,7 +35,7 @@ int main(void) {
  		PORTD = tmpD;
 	}
 	if (tmpA + tmpB + tmpC > 140) {
-                 tmpD = tmpD | 0x03;
+                 tmpD = tmpD | 0x01;
 		PORTD= tmpD;	
 	}
 	    }
