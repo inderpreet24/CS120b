@@ -20,7 +20,7 @@ int main(void) {
     DDRD = 0xFF; PORTC =0x00;
      unsigned char tmpA = 0;
     unsigned char tmpB = 0;
-   unsigned char tmpC - 0;
+   unsigned char tmpC = 0;
    unsigned char tmpD = 0;
 
     while (1) {
