@@ -32,13 +32,13 @@ int main(void) {
 
 	if (tmpA - tmpC > 80 || tmpC - tmpA > 80) {
 	        tmpD = tmpD | 0x02;
- 		PORTD = tmpD;
+ 	
 	}
 	if (tmpA + tmpB + tmpC > 140) {
                  tmpD = tmpD | 0x01;
-		PORTD = tmpD;	
+	
 	}
-              
+            PORTD = tmpD;  
 	    }
     return 1;
 }
